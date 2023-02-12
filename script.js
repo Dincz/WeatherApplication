@@ -56,7 +56,7 @@ const CommonCities = (city) => {
       const properties = ["cityName","temp", "feels_like", "humidity", "min_temp", "max_temp", "wind_speed", "wind_degrees", "sunrise", "sunset"];
       properties.forEach(property => {
         const td = document.createElement("td");
-        td.innerHTML = response[property] || city;
+        td.innerHTML = response[property] === undefined ? city : response[property];
         tr.append(td);
       });
       tbody.append(tr);
