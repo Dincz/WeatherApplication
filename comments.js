@@ -1,33 +1,33 @@
-// const populateCityWeatherTable = async() => {
-//   const table = document.createElement('table');
-//   const cities= ['Agra', 'Bangalore','chennai','delhi','mumbai'];
-//   for await (const city of cities){
-//       const response =  await fetch(
-//         'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city,
-//         options
-//       )
-//       const data = await response.json();
-//       const dataKeys = Object.keys(data);
+const populateCityWeatherTable = async() => {
+  const table = document.createElement('table');
+  const cities= ['Agra', 'Bangalore','chennai','delhi','mumbai'];
+  for await (const city of cities){
+      const response =  await fetch(
+        'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city,
+        options
+      )
+      const data = await response.json();
+      const dataKeys = Object.keys(data);
 
-//       const tr = document.createElement('tr');
+      const tr = document.createElement('tr');
 
-//       const cityData = document.createElement('td');
-//       const cityName = document.createTextNode(city);
-//       cityData.appendChild(cityName);
-//       tr.appendChild(cityData);
+      const cityData = document.createElement('td');
+      const cityName = document.createTextNode(city);
+      cityData.appendChild(cityName);
+      tr.appendChild(cityData);
 
-//       for (key of dataKeys) {
-//         const htmlAttribute = document.createElement('td');
-//         const attributeText = document.createTextNode(data[key]);
+      for (key of dataKeys) {
+        const htmlAttribute = document.createElement('td');
+        const attributeText = document.createTextNode(data[key]);
 
-//         htmlAttribute.appendChild(attributeText);
-//         tr.appendChild(htmlAttribute);
-//       }
+        htmlAttribute.appendChild(attributeText);
+        tr.appendChild(htmlAttribute);
+      }
 
-//       table.appendChild(tr);
-//   }
-//   document.body.appendChild(table);
-// }
+      table.appendChild(tr);
+  }
+  document.body.appendChild(table);
+}
 
 // populateCityWeatherTable()
 
@@ -63,3 +63,9 @@
 //     })
 //     .catch((err) => console.error(err));
 // };
+
+const response =  await fetch(
+  "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city,
+  options
+  return 
+);
