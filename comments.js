@@ -83,3 +83,65 @@ submit.addEventListener("click", async (e) => {
   sunrise.innerHTML = data.sunrise;
   sunset.innerHTML = data.sunset;
 });
+  //OUTPUTS DATA OF COMMONCITIES
+
+// const CommonCities = async (data, city) => {
+//       console.log(data);
+//       const tbody = document.querySelector("tbody");
+//       const tr = document.createElement("tr");
+//       const properties = ["cityName","temp", "feels_like", "humidity", "min_temp", "max_temp", "wind_speed", "wind_degrees", "sunrise", "sunset"];
+//       properties.forEach(property => {
+//         const td = document.createElement("td");
+//         td.innerHTML = data[property] === undefined ? city : data[property];
+//         tr.append(td);
+//       });
+//       tbody.append(tr);
+//     };
+//LIST OF COMMON CITIES
+
+    // const Common = async () => { 
+    //   const cities = ["Agra", "Bangalore", "Chennai", "Delhi", "Mumbai"];
+    //   for (const city of cities) {
+    //     const data = await fetcher(city); 
+    //     CommonCities(data, city); 
+    //   }
+    // };
+    
+    // Common(); // Call the Common function
+    
+
+  ///aync===fetch*1,properties.
+  //try to add in common cities
+  // catch (err) {
+  //   console.error(`The Error was thrown : ${err}`);
+
+    //new addition
+    // const object = data;
+    // console.log(Object.keys(object));
+    //old
+
+    // const test = async (data, city) => {
+    //   console.log(data);
+    //   const keys = [];
+    //   for (const key in data){
+    //     keys.push(key);
+    //   }
+    //   console.log(keys);
+    //   const tbody = document.querySelector("tbody");
+    //   const tr = document.createElement("tr");
+    //   keys.forEach(key=> {
+    //     const td = document.createElement("td");
+    //     td.innerHTML = data[keys] === undefined ? city : data[keys];
+    //     tr.append(td);
+    //   });
+    //   tbody.append(tr);
+    // };
+
+    // const testing = async () => { 
+    //   const cities = ["Agra"];
+    //   for (const city of cities) {
+    //     const data = await fetcher(city); 
+    //     test(data, city); 
+    //   }
+    // };
+    // testing();
