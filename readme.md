@@ -12,7 +12,7 @@
 - Wind_degrees
 - Wind_speed
 
-###It has been build with the use of these following tools
+### It has been build with the use of these following tools
 
 - Bootstrap
 - Api-ninjas
